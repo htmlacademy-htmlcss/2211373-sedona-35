@@ -4,17 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
   <header class="main-header">
     <div class="main-header--inner">
-      <a class="navigation-logo" href="#"><img src="images/logo.svg" alt="Логотип городка Седона" class="logo-img"
-          width="140" height="70"></a>
+      <a class="navigation-logo"><img src="images/logo.svg" alt="Логотип городка Седона" class="logo-img" width="140"
+          height="70"></a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="index.html" class="navigation-link">Главная</a>
+            <a class="navigation-link navigation-link--current">Главная</a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">О седоне</a>
@@ -34,12 +35,15 @@
           <li class="navigation-item">
             <a href="#" class="navigation-link">
               <span class="visually-hidden">
-                Лайк
+                Избранное
+              </span>
+              <span class="navigation-favorites">
+                12
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Хочу сюда!</a>
+            <a class="navigation-want--link" href="#" class="navigation-link">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -49,10 +53,12 @@
 
   <main class="main-index">
     <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-    <img class="mountains" src="images/mountains.jpg" alt="Горы" width="1200" height="485">
-    <img class="welcome" src="images/welcome.png" alt="" width="187" height="44">
-    <img class="gorgeus" src="images/gorgeus.png" alt="" width="256" height="28">
-    <img class="sedona" src="images/sedona.png" alt="" width="456" height="212" style="background-color: red">
+    <div class="welcome-to--sedona">
+      <div class="welcome-inner">
+        <img class="welcome" src="images/welcome.svg" alt="Добро пожаловать в великолепную Седону" width="458"
+          height="352">
+      </div>
+    </div>
     <h2 class="title">
       Седона — небольшой городок в Аризоне, заслуживающий большего!
     </h2>
@@ -140,14 +146,16 @@
       <a href="#" class="search-hotels--link">Поиск гостиницы в Седоне</a>
     </section>
     <section class="subscribe">
-      <h2 class="subscribe-title">
-        Подпишитесь на рассылку
-      </h2>
-      <p class="subscribe-subtitle">
-        Только полезная информация и никакого спама, честное бойскаутское!
-      </p>
-      <input type="email" placeholder="Ваш e-mail">
-      <button class="button" type="submit">Подписаться</button>
+      <div class="subscribe-inner">
+        <h2 class="subscribe-title">
+          Подпишитесь на рассылку
+        </h2>
+        <p class="subscribe-subtitle">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <input type="email" placeholder="Ваш e-mail">
+        <button class="button" type="submit">Подписаться</button>
+      </div>
     </section>
   </main>
 
@@ -159,22 +167,26 @@
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="footer-social--list">
         <li class="footer-social--item">
-          <a href="https://vk.com/htmlacademy" class="footer-social--link"><img src="#" alt="Логотип вконтакте"
-              class="vkontakte-img"></a>
+          <a href="https://vk.com/htmlacademy" class="footer-social--link"><img src="images/social/vkontakte .png"
+              alt="Логотип вконтакте" class="vkontakte-img">
+          </a>
         </li>
         <li class="footer-social--item">
-          <a href="https://t.me/htmlacademy" class="footer-social--link"><img src="#" alt="Логотип телеграмм"
-              class="telegram-img"></a>
+          <a href="https://t.me/htmlacademy" class="footer-social--link"><img src="images/social/telegram.png"
+              alt="Логотип телеграмм" class="telegram-img">
+          </a>
         </li>
         <li class="footer-social--item">
-          <a href="https://www.youtube.com/user/htmlacademyru" class="footer-social--link"><img src="#"
-              alt="Логотип ютуб" class="youtube-img"></a>
+          <a href="https://www.youtube.com/user/htmlacademyru" class="footer-social--link"><img
+              src="images/social/youtube.png" alt="Логотип ютуб" class="youtube-img">
+          </a>
         </li>
       </ul>
     </section>
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <a href="tel:+78128121212" aria-label="Контактный телефон: +7-812-812-12-12.">+7 (812) 812-12-12</a>
+      <a class="footer-contacts--link" href="tel:+78128121212" aria-label="Контактный телефон: +7-812-812-12-12.">+7
+        (812) 812-12-12</a>
     </section>
     <section class="developer">
       <h2 class="visually-hidden">Разработчик</h2>
