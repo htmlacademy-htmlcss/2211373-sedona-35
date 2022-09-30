@@ -58,6 +58,7 @@ body {
   background-repeat: no-repeat;
   height: 485px;
   text-align: center;
+  background-color: #82B3D3;
 }
 
 .welcome-inner {
@@ -134,6 +135,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #82B3D3;
 }
 
 .subscribe-inner {
@@ -178,9 +180,10 @@ body {
 
 
 .catalog-background {
-  background-image: url("../images/catalog-fon.jpg");
+  background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: #82B3D3;
 }
 
 .inner-header--title {
