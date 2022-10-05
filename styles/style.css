@@ -15,20 +15,38 @@
 }
 
 body {
+    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
-    background-color: #ffffff;
     color: #000000;
   }
 
   .main-header {
     color: #000000;
-    background-color: #ffffff;
+  }
+
+  .main-header--inner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .navigation {
+    display: flex;
+    width: 1060px;
   }
 
   .navigation-list {
     list-style: none;
+    width: 430px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation-user {
+    max-width: 260px;
+    margin-left: auto;
   }
 
   .navigation-link {
@@ -52,22 +70,30 @@ body {
   padding: 8px 34px;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .welcome-to--sedona {
   background-image: url("../images/mountains.jpg");
-  background-size: 100% 485px;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   height: 485px;
   text-align: center;
   background-color: #82B3D3;
+  position: relative;
 }
 
-.welcome-inner {
+.welcome-collar {
+  width: 100%;
+  height: 57px;
   background-image: url("../images/Vector.png");
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: 0% 100%;
+  background-size: 100% 57px;
+  position: absolute;
+  bottom: 0;
 }
-
 
 .title {
   font-size: 30px;
@@ -75,6 +101,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  width: 620px;
+  margin: 0 auto;
 }
 
 .subtitle {
@@ -87,6 +115,27 @@ body {
 .advantage-list {
   text-align: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.advantage-item {
+  width: 400px;
+  height: 384px;
+}
+
+.advantage-item--img {
+  display: flex;
+  width: 1200px;
+  height: 384px;
+}
+
+.advantage-item--text {
+  background-color: #82B3D3;
+  color: #ffffff;
+  width: 400px;
+  height: 384px;
 }
 
 .advantage-title {
@@ -94,10 +143,27 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  width: 175px;
+  margin: 0 auto;
 }
 
 .advantage-description {
   font-weight: 400;
+  width: 230px;
+  margin: 0 auto;
+}
+
+.advantage-img {
+  width: 800px;
+  height: 384px;
+}
+
+.advantage-item--color {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-item--color2 {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .search-hotels {
@@ -302,3 +368,42 @@ body {
   color: #000000;
   background-color: #F2F2F2;
 }
+
+
+
+
+
+
+
+.page-footer--container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social {
+  width: 115px;
+  margin-right: 250px;
+}
+
+.footer-social--list {
+  display: flex;
+}
+
+.developer {
+  width: 115px;
+  margin-left: auto;
+}
+
+
+
+
+
+
+
+
+
+.catalog-filter {
+  display: flex;
+}
+
