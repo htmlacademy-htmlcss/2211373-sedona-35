@@ -30,16 +30,19 @@
                 </ul>
                 <ul class="navigation-list navigation-user">
                     <li class="navigation-item">
-                        <a href="#" class="navigation-link">
+                        <a href="#" class="navigation-link navigation-link--search">
                             <span class="visually-hidden">
                                 Поиск
                             </span>
                         </a>
                     </li>
                     <li class="navigation-item">
-                        <a href="#" class="navigation-link">
+                        <a href="#" class="navigation-link navigation-link--favorites">
                             <span class="visually-hidden">
                                 Избранное
+                            </span>
+                            <span class="navigation-favorites">
+                                12
                             </span>
                         </a>
                     </li>
@@ -127,22 +130,23 @@
                 </section>
             </div>
             <section class="catalog-hotels">
-                <span>Найдено гостиниц: 38</span>
-                <select class="select-control" aria-label="Сортировка">
-                    <option value="cheap">Сначала дешевые</option>
-                    <option value="expensive">Сначала дорогие</option>
-                    <option value="popular">Сначала популярные</option>
-                </select>
-                <a href="#" class="button button-current">
-                    <span class="visually-hidden">Показать карточки</span>
-                </a>
-                <a href="#" class="button">
-                    <span class="visually-hidden">Карточка отеля</span>
-                </a>
-                <a class="button" href="#">
-                    <span class="visually-hidden">Показать список</span>
-                </a>
-
+                <div class="sorting-container">
+                    <span class="catalog-hotels--found">Найдено гостиниц: 38</span>
+                    <select class="select-control" aria-label="Сортировка">
+                        <option value="cheap">Сначала дешевые</option>
+                        <option value="expensive">Сначала дорогие</option>
+                        <option value="popular">Сначала популярные</option>
+                    </select>
+                    <a href="#" class="button button-current">
+                        <span class="visually-hidden">Показать карточки</span>
+                    </a>
+                    <a href="#" class="button">
+                        <span class="visually-hidden">Карточка отеля</span>
+                    </a>
+                    <a class="button" href="#">
+                        <span class="visually-hidden">Показать список</span>
+                    </a>
+                </div>
                 <ul class="hotel-list">
                     <li class="hotel-card">
                         <a class="hotel-card--link" href="#">
@@ -208,19 +212,19 @@
                         <a class="pagination-link" href="#">4</a>
                     </li>
                     <li class="pagination-item">
-                        <a class="pagination-link" href="#">...</a>
+                        <a class="pagination-link pagination-else" href="#">...</a>
                     </li>
                     <li class="pagination-item">
                         <a class="pagination-link" href="#">10</a>
                     </li>
                 </ul>
             </section>
-            <section class="subscribe">
+            <section class="subscribe-catalog">
                 <div class="subscribe-inner">
-                    <h2 class="subscribe-title">
+                    <h2 class="subscribe-title subscribe-title--catalog">
                         Подпишитесь на рассылку
                     </h2>
-                    <p class="subscribe-subtitle">
+                    <p class="subscribe-subtitle subscribe-subtitle--catalog">
                         Только полезная информация и никакого спама, честное бойскаутское!
                     </p>
                     <input type="email">
