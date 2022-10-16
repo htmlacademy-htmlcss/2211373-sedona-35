@@ -494,6 +494,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
   margin-right: 200px;
 }
 
@@ -510,6 +511,10 @@ body {
   margin-right: 8px;
 }
 
+.sorting-container .button:last-child {
+  margin-right: 0;
+}
+
 .sorting-container .button-current {
   border: 2px solid #000000;
   border-radius: 4px;
@@ -517,6 +522,7 @@ body {
 
 .select-control {
   margin-right: 70px;
+  width: 292px;
 }
 
 .hotel-list {
@@ -565,6 +571,7 @@ body {
 .hotel-card--price {
   font-weight: 400;
   margin-bottom: 16px;
+  text-transform: capitalize;
 }
 
 .hotel-card--button {
