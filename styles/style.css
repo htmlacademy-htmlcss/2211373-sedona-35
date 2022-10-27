@@ -1094,7 +1094,7 @@ body {
   display: flex;
 }
 
-.input-number[type=number] {
+.input-number {
   width: 110px;
 }
 
@@ -1153,7 +1153,7 @@ body {
   border-radius: 4px;
 }
 
-.input-number + .control-score::before {
+/*.input-number + .control-score::before {
   position: absolute;
   content: "";
   width: 2px;
@@ -1183,7 +1183,7 @@ body {
   background-color: #000000;
   left: 150px;
   top: 19px;
-}
+}*/
 
 .child::after {
   content: url(../images/i.png);
@@ -1193,6 +1193,3 @@ body {
   margin-right: 46px;
 }
 
-.input-number {
-  margin: 0 auto;
-}
