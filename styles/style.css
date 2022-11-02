@@ -137,7 +137,7 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #7DB54F;
+  background-color: #7db54f;
   position: absolute;
   top: 0;
   display: flex;
@@ -173,7 +173,7 @@ body {
   background-repeat: no-repeat;
   height: 485px;
   text-align: center;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   position: relative;
   margin-bottom: 70px;
 }
@@ -194,7 +194,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  width: 620px;
+  width: 630px;
   margin: 0 auto;
   margin-bottom: 25px;
 }
@@ -228,7 +228,7 @@ body {
 }
 
 .advantage-item--text {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: #ffffff;
   width: 400px;
   padding-top: 92px;
@@ -258,6 +258,10 @@ body {
 
 .advantage-item--color {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-list2 .advantage-item:nth-child(even) {
+  background-color: #ffffff;
 }
 
 .advantage-item--color2 {
@@ -331,7 +335,7 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 189px;
-  left: 170px ;
+  left: 170px;
 }
 
 .search-hotels {
@@ -375,7 +379,7 @@ body {
   min-height: 362px;
   display: flex;
   justify-content: center;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   background-size: cover;
   text-align: center;
 }
@@ -402,9 +406,7 @@ body {
   line-height: 26px;
   color: #ffffff;
   width: 475px;
-  margin: 0;
-  margin: 0 auto;
-  margin-bottom: 54px;
+  margin: 0 auto 54px;
 }
 
 .page-footer--container {
@@ -444,13 +446,13 @@ body {
 .footer-social--link:hover .vkontakte,
 .footer-social--link:hover .telegram,
 .footer-social--link:hover .youtube {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .footer-social--link:focus .vkontakte,
 .footer-social--link:focus .telegram,
 .footer-social--link:focus .youtube {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .footer-social--link:active .vkontakte,
@@ -491,21 +493,11 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-
-
-
-
-
-
-
-
-
-
 .catalog-background {
   background-image: url("../images/catalog/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   padding-top: 35px;
   padding-left: 70px;
 }
@@ -542,7 +534,7 @@ body {
 }
 
 .breadcrumbs-link--house::after {
-  content: url(../images/catalog/house-catalog.svg);
+  content: url("../images/catalog/house-catalog.svg");
   width: 12px;
   height: 12px;
   margin-right: 11px;
@@ -550,7 +542,7 @@ body {
 }
 
 .breadcrumbs-item:last-child::before {
-  content: url(../images/catalog/breadcrumb-img.svg);
+  content: url("../images/catalog/breadcrumb-img.svg");
   width: 12px;
   height: 12px;
   margin-right: 11px;
@@ -614,7 +606,7 @@ body {
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
-  content: url(../images/catalog/checkbox.svg);
+  content: url("../images/catalog/checkbox.svg");
   left: 4px;
 }
 
@@ -642,7 +634,7 @@ body {
 }
 
 .control-input:focus + .control-mark {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .control-input:active + .control-mark {
@@ -688,6 +680,7 @@ body {
 
 .button-filter--group:hover {
   background-color: rgba(104, 162, 202, 1);
+  cursor: pointer;
 }
 
 .button-filter--group:focus {
@@ -699,11 +692,12 @@ body {
 }
 
 .button-filter--group:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .button2-filter--group:hover {
   color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 .button2-filter--group:disabled {
@@ -722,15 +716,15 @@ body {
   margin-right: 200px;
 }
 
-.sorting-container{
+.sorting-container {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .sorting-container .button {
   min-width: 48px;
   height: 48px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   margin-right: 8px;
   display: flex;
@@ -739,12 +733,12 @@ body {
 }
 
 .sorting-container .button:focus {
-  border-color: #68A2CA ;
+  border-color: #68a2ca;
 }
 
 .sorting-container .button:hover,
 .sorting-container .button:active {
-  border-color: #000000 ;
+  border-color: #000000;
 }
 
 .sorting-container .button:last-child {
@@ -785,7 +779,8 @@ body {
 .hotel-list {
   display: grid;
   grid-template-columns: 340px 340px 340px;
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 15px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -796,7 +791,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   padding: 20px;
 }
 
@@ -847,7 +842,7 @@ body {
 
 .chosen-btn {
   display: inline-block;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: #ffffff;
   padding: 8px 18px;
   font-weight: 700;
@@ -863,10 +858,11 @@ body {
 
 .chosen-btn--visited {
   padding: 8px 16px;
+  background-color: #7db54f;
 }
 
 .star {
-  background-image: url(../images/star.svg);
+  background-image: url("../images/star.svg");
   background-repeat: space repeat;
 }
 
@@ -941,7 +937,7 @@ body {
 
 .pagination-current {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .pagination-else {
@@ -963,7 +959,7 @@ body {
 }
 
 .subscribe-inner--catalog {
-  padding-top: 96px;
+  padding-top: 84px;
 }
 
 .subscribe-title--catalog {
@@ -990,7 +986,7 @@ body {
 }
 
 .button:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .navigation-link--want:hover,
@@ -1012,31 +1008,27 @@ body {
 }
 
 .chosen-btn:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .chosen-btn:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .chosen-btn:active {
-  background-color: #82B3D3;
-}
-
-.chosen-btn--visited {
-  background-color: #7DB54F;
+  background-color: #82b3d3;
 }
 
 .chosen-btn--visited:hover {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .chosen-btn--visited:focus {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .chosen-btn--visited:active {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .navigation-link--search:hover,
@@ -1061,12 +1053,12 @@ body {
 .button-subscribe {
   margin-left: -4px;
   padding: 8px 50px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: #ffffff;
   border: none;
   border-radius: 0 4px 4px 0;
@@ -1095,7 +1087,6 @@ body {
 .button-subscribe:active {
   background-color: rgba(104, 162, 202, 1);
 }
-
 
 .range-scale {
   position: relative;
@@ -1141,14 +1132,37 @@ body {
 
 .range-wrapper--inputs {
   margin-bottom: 48px;
+  position: relative;
 }
 
 .range-input {
   width: 143px;
   padding: 12px 20px;
   font: inherit;
+  font-weight: 700;
+  line-height: 24px;
   border: none;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+}
+
+.filter-label--left {
+  position: absolute;
+  left: 110px;
+  top: 13px;
+  opacity: 0.3;
+}
+
+.filter-label--right {
+  position: absolute;
+  right: 20px;
+  top: 13px;
+  opacity: 0.3;
+}
+
+.range-input::placeholder {
+  text-align: right;
+  font-weight: 400;
 }
 
 .range-input--left {
@@ -1160,7 +1174,7 @@ body {
 }
 
 .range-input:focus {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .range-input:active {
@@ -1203,21 +1217,21 @@ body {
   background-color: #ffffff;
   border: none;
   cursor: pointer;
-} 
+}
 
 .close-circle:hover {
- fill: #e6e6e6;
+  fill: #e6e6e6;
 }
 
 .modal-close--button:focus .close {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   border-radius: 50%;
- }
+}
 
 .modal-close--button:active .close-cross {
   opacity: 0.3;
 }
- 
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -1231,10 +1245,6 @@ body {
 
 .form-div {
   display: flex;
-}
-
-.input-number {
-  width: 110px;
 }
 
 .auth-form .field-group {
@@ -1259,7 +1269,7 @@ body {
   padding: 18px 256px;
   color: #ffffff;
   background-color: rgba(131, 179, 211, 1);
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1269,36 +1279,33 @@ body {
 }
 
 .auth-form--button:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .auth-form--button:focus {
-  background-color: #68A2CA;
-}
-
-.field-group{
-  position: relative;
-}
-
-.addition {
- display: block;
- position: absolute;
- left: 160px;
- font-weight: 400;
- font-size: 16px;
- line-height: 21px;
- color: rgba(255, 87, 87, 1);
-}
-
-.addition-color {
-  color: rgba(51, 51, 51, 1);
+  background-color: #68a2ca;
 }
 
 .field-group {
+  position: relative;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+}
+
+.addition {
+  display: block;
+  position: absolute;
+  left: 160px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(255, 87, 87, 1);
+}
+
+.addition-color {
+  color: rgba(51, 51, 51, 1);
 }
 
 .field {
@@ -1314,6 +1321,7 @@ body {
 .input-number {
   text-align: center;
   position: relative;
+  width: 110px;
 }
 
 .old {
@@ -1359,7 +1367,7 @@ body {
   width: 2px;
   height: 14px;
   background-color: rgba(117, 97, 87, 0.3);
-  rotate: 90deg;
+  transform: rotate(90deg);
 }
 
 .control-score--plus {
@@ -1375,7 +1383,7 @@ body {
 }
 
 .control-score:focus {
-  outline: 3px solid #82B3D3;
+  outline: 3px solid #82b3d3;
   border-radius: 4px;
 }
 
@@ -1401,7 +1409,7 @@ body {
 .tooltip-icon {
   width: 100%;
   height: 100%;
-  color: #83B3D3;
+  color: #83b3d3;
   display: block;
   position: relative;
   top: 5px;
@@ -1428,21 +1436,27 @@ body {
   display: block;
 }
 
-.tooltip-text:after {
-  content:'';
+.tooltip-text::after {
+  content: "";
   background-image: url("../images/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
-  position:absolute;
+  position: absolute;
   bottom: 100%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
 
 .auth-form--field {
-  background-image: url(../images/date.svg);
+  background-image: url("../images/date.svg");
   background-repeat: no-repeat;
   background-position: 402px 50%;
+}
+
+.shadow {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 0 40px #f2f2f2;
 }
