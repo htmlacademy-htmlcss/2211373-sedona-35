@@ -260,6 +260,10 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.advantage-list2 .advantage-item:nth-child(even) {
+  background-color: #ffffff;
+}
+
 .advantage-item--color2 {
   background-color: rgba(131, 179, 211, 0.2);
 }
@@ -1132,8 +1136,15 @@ body {
   width: 143px;
   padding: 12px 20px;
   font: inherit;
+  font-weight: 700;
+  line-height: 24px;
   border: none;
   appearance: textfield;
+}
+
+.range-input::placeholder {
+  text-align: right;
+  font-weight: 400;
 }
 
 .range-input--left {
@@ -1425,4 +1436,3 @@ body {
   background-repeat: no-repeat;
   background-position: 402px 50%;
 }
-
