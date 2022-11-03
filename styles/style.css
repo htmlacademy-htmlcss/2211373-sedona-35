@@ -181,7 +181,7 @@ body {
 .welcome-collar {
   width: 100%;
   height: 57px;
-  background-image: url("../images/Vector.png");
+  background-image: url("../images/vector.png");
   background-repeat: no-repeat;
   background-size: 100% 57px;
   position: absolute;
@@ -247,8 +247,12 @@ body {
 
 .advantage-description {
   font-weight: 400;
-  width: 230px;
+  width: 232px;
   margin: 0 auto;
+}
+
+.advantage-description1 {
+  width: 180px;
 }
 
 .advantage-img {
@@ -359,7 +363,7 @@ body {
   line-height: 26px;
   width: 592px;
   margin: 0 auto;
-  margin-bottom: 54px;
+  margin-bottom: 60px;
 }
 
 .search-hotels--link {
@@ -407,6 +411,10 @@ body {
   color: #ffffff;
   width: 475px;
   margin: 0 auto 54px;
+}
+
+.subscribe-wrapper {
+  display: flex;
 }
 
 .page-footer--container {
@@ -537,7 +545,6 @@ body {
   content: url("../images/catalog/house-catalog.svg");
   width: 12px;
   height: 12px;
-  margin-right: 11px;
   padding: 10px;
 }
 
@@ -545,7 +552,7 @@ body {
   content: url("../images/catalog/breadcrumb-img.svg");
   width: 12px;
   height: 12px;
-  margin-right: 11px;
+  margin-right: 5px;
 }
 
 .catalog-filter {
@@ -608,6 +615,7 @@ body {
   position: absolute;
   content: url("../images/catalog/checkbox.svg");
   left: 4px;
+  top: -2px;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -751,12 +759,16 @@ body {
 }
 
 .select-control {
+  font-family: inherit;
   margin-right: 70px;
   width: 292px;
   background-color: #ffffff;
   border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
   padding-left: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .select-control:hover {
@@ -862,7 +874,7 @@ body {
 }
 
 .star {
-  background-image: url("../images/star.svg");
+  background-image: url("../images/catalog/star.svg");
   background-repeat: space repeat;
 }
 
@@ -1040,7 +1052,7 @@ body {
   opacity: 0.6;
 }
 
-.field {
+.subscribe-field {
   margin: 0;
   padding: 14px 20px;
   width: 452px;
@@ -1048,6 +1060,7 @@ body {
   font-weight: 400;
   border-radius: 4px 0 0 4px;
   border: none;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .button-subscribe {
@@ -1064,20 +1077,16 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.field::placeholder {
-  color: rgba(0, 0, 0, 1);
+.subscribe-field:hover {
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.field:hover {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.field:focus {
-  color: rgba(0, 0, 0, 0.6);
+.subscribe-field:focus {
+  color: rgba(0, 0, 0, 0.3);
   outline: 3px solid rgba(131, 179, 211, 1);
 }
 
-.field:active {
+.subscribe-field:active {
   color: rgba(0, 0, 0, 1);
   outline: 2px solid rgba(0, 0, 0, 1);
 }
@@ -1459,4 +1468,8 @@ body {
   width: 1200px;
   margin: 0 auto;
   box-shadow: 0 0 0 40px #f2f2f2;
+}
+
+.box-shadow {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
