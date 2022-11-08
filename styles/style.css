@@ -34,6 +34,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  background-color: #e5e5e5;
 }
 
 .visually-hidden {
@@ -49,6 +50,7 @@ body {
 
 .main-header {
   color: #000000;
+  background-color: #ffffff;
 }
 
 .main-header--inner {
@@ -164,6 +166,7 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .welcome-to--sedona {
@@ -346,6 +349,7 @@ body {
   text-align: center;
   min-height: 406px;
   padding-top: 96px;
+  background-color: #ffffff;
 }
 
 .search-hotels--title {
@@ -424,6 +428,7 @@ body {
   padding-top: 40px;
   padding-bottom: 30px;
   align-items: center;
+  background-color: #ffffff;
 }
 
 .footer-social {
