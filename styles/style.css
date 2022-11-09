@@ -474,6 +474,11 @@ body {
   fill: rgba(104, 162, 202, 0.3);
 }
 
+.footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer-contacts--link {
   font-weight: 400;
   font-size: 40px;
@@ -536,6 +541,9 @@ body {
 .breadcrumbs-link {
   color: inherit;
   margin-right: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .breadcrumbs-link:hover {
@@ -1269,6 +1277,23 @@ body {
 .auth-form .auth-form--field {
   width: 434px;
   padding-left: 20px;
+}
+
+.auth-form--field:hover {
+  opacity: 0.6;
+  background-color: #e6e6e6;
+}
+
+.auth-form--field:focus {
+  opacity: 0.6;
+  outline: 3px solid #83b3d3;
+  background-color: #e6e6e6;
+}
+
+.auth-form--field:active {
+  outline: 2px solid #000000;
+  opacity: 1;
+  background-color: #f2f2f2;
 }
 
 .field-group:nth-child(1) .auth-form--field {
