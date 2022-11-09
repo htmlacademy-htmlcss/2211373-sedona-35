@@ -34,6 +34,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  background-color: #e5e5e5;
 }
 
 .visually-hidden {
@@ -49,6 +50,7 @@ body {
 
 .main-header {
   color: #000000;
+  background-color: #ffffff;
 }
 
 .main-header--inner {
@@ -164,6 +166,7 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .welcome-to--sedona {
@@ -346,6 +349,7 @@ body {
   text-align: center;
   min-height: 406px;
   padding-top: 96px;
+  background-color: #ffffff;
 }
 
 .search-hotels--title {
@@ -379,7 +383,7 @@ body {
 }
 
 .subscribe {
-  background-image: url("../images/Subscribe.jpg");
+  background-image: url("../images/subscribe.jpg");
   min-height: 362px;
   display: flex;
   justify-content: center;
@@ -424,6 +428,7 @@ body {
   padding-top: 40px;
   padding-bottom: 30px;
   align-items: center;
+  background-color: #ffffff;
 }
 
 .footer-social {
@@ -467,6 +472,11 @@ body {
 .footer-social--link:active .telegram,
 .footer-social--link:active .youtube {
   fill: rgba(104, 162, 202, 0.3);
+}
+
+.footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-contacts--link {
@@ -531,6 +541,9 @@ body {
 .breadcrumbs-link {
   color: inherit;
   margin-right: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .breadcrumbs-link:hover {
@@ -1266,6 +1279,23 @@ body {
   padding-left: 20px;
 }
 
+.auth-form--field:hover {
+  opacity: 0.6;
+  background-color: #e6e6e6;
+}
+
+.auth-form--field:focus {
+  opacity: 0.6;
+  outline: 3px solid #83b3d3;
+  background-color: #e6e6e6;
+}
+
+.auth-form--field:active {
+  outline: 2px solid #000000;
+  opacity: 1;
+  background-color: #f2f2f2;
+}
+
 .field-group:nth-child(1) .auth-form--field {
   margin-left: 24px;
 }
@@ -1325,6 +1355,8 @@ body {
   color: rgba(0, 0, 0, 1);
   background-color: #f2f2f2;
   border-radius: 4px;
+  min-height: 48px;
+  border: none;
 }
 
 .input-number {
@@ -1334,7 +1366,7 @@ body {
 }
 
 .old {
-  margin-right: 36px;
+  margin-right: 46px;
 }
 
 .child {
@@ -1353,13 +1385,13 @@ body {
 }
 
 .minus {
-  left: 150px;
-  top: 17px;
+  left: 160px;
+  bottom: 14px;
 }
 
 .plus {
-  left: 205px;
-  bottom: 15px;
+  left: 215px;
+  bottom: 14px;
 }
 
 .minus2 {
@@ -1368,8 +1400,8 @@ body {
 }
 
 .plus2 {
-  top: 15px;
-  right: 10px;
+  top: 14px;
+  right: 15px;
 }
 
 .control-score--minus {
